@@ -1,0 +1,6 @@
+<ul class="unstyled">
+    <li ng-repeat="item in catalog">
+      <product item="item"></product>
+      <a href class="btn btn-primary" ng-click="basket.add(item)"> Buy!</a>
+    </li>
+</ul>
