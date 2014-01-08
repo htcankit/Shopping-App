@@ -11,6 +11,10 @@ angular.module('projectsApp', ["ngRoute"])
        templateUrl: 'views/checkout.html',
        controller: 'CheckoutCtrl'
      })
+     .when('/catalogprofile', {
+       templateUrl: 'views/catalogprofile.html',
+       controller: 'CatalogprofileCtrl'
+     })
      .otherwise({
        redirectTo: '/'
      });
