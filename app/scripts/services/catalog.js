@@ -25,5 +25,29 @@ angular.module('projectsApp')
     name: 'Batmobile',
     img: 'http://cache.jalopnik.com/assets/images/12/2007/09/batmobile_Tumbler.jpg',
     price: 1000000
-  }
+  },
+  {
+    id: 5,
+    name: 'Sony NEX-6',
+    img: 'http://i.ebayimg.com/00/s/MjIwWDIyMA==/z/lDIAAOxy63FSq72g/$_1.JPG?set_id=2',
+    price: 47650
+  },
+      {
+    id: 6,
+    name: 'Watch',
+    img: 'http://thumbs.ebaystatic.com/d/w225/m/mWAlJnmVq_0gusuhOaDwuPg.jpg',
+    price: 16929
+  },
+  {
+    id: 7,
+    name: 'Leather Jacket',
+    img: 'http://thumbs.ebaystatic.com/d/w225/m/mm3T5dUhKBZVeAgbDMysJrA.jpg',
+    price: 5750
+  },
+  {
+    id: 8,
+    name: 'Lenovo Tablet',
+    img: 'http://thumbs.ebaystatic.com/d/w225/m/mghYCIUqNPNPDZaxETYNCig.jpg',
+    price: 24990
+  },
 ]);

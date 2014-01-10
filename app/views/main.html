@@ -1,6 +1,27 @@
-<ul class="unstyled">
+<div class="bs-example">
+	<div class="row">
+
+		  <div class="col-sm-6 col-md-3" ng-repeat="item in catalog">
+			    <div class="thumbnail">
+				      <img ng-src="{{item.img}}" style="height: 176px; width: 176px;" class="img-circle">
+					<div class="caption">
+						<h4 class="ng-binding" style="display: inline-block">{{item.name}}</h4>
+						<a style="display: inline-block; padding: 2px; 8px;" role="button" class="btn btn-primary" href="#" ng-click="basket.add(item)">Buy</a>
+						 {{item.price | currency}}
+					</div>			      
+				</div>	
+		  </div>
+
+	</div><!-- End of class row -->
+</div> <!-- End of bs-example -->
+
+
+
+
+<!-- <ul class="unstyled">
     <li ng-repeat="item in catalog">
       <product item="item"></product>
       <a href class="btn btn-primary" ng-click="basket.add(item)"> Buy!</a>
     </li>
 </ul>
+ -->
