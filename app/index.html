@@ -25,38 +25,49 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-  <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
-    <div class="container" ng-controller="NavCtrl">
-      <div class="navbar-header">
-        <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-        <a href="/">Shopping App</a>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color:#005387;border-color:#005387">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" style="color:white;font-family:bold;font-size:20px" alt="Online Shopping">Shopping Cart</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <form class="navbar-form" role="form">
+            <div class="form-group" style="width:50%">
+              <!-- <span class="glyphicon glyphicon-search"></span> -->
+              <input type="text" placeholder="Search" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Search</button>
+          </form>
+        </div><!--/.navbar-collapse -->
       </div>
-
-  <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-    <ul class="nav navbar-nav">
-      <li> <a href="#">Catalog</a></li>
-      <li> <a href="#">Men</a></li>
-      <li> <a href="#">Women</a></li>
-      <li> <a href="#">Accessories</a></li>
-      <li> <a href="#">Kids</a></li>
-      <li> <a href="#">Brands</a></li>
-      <li> <a href="#">Trends</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#/checkout">Checkout({{basket.count()}})</a></li>
-    </ul>
-  </nav>      
     </div>
-  </header>
 
-  <div class="jumbotron">
-    <div class="container" ng-view=""></div>
+  <div class="jumbotron" style="padding-bottom:0px;background-color: #0a3151;border-color:#0a3151;font-size:15px;">
+    <div class="container" ng-controller="NavCtrl">
+      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav">
+          <li> <a href="#" style="color:white">ELECTRONICS</a></li>
+          <li> <a href="#" style="color:white">MEN</a></li>
+          <li> <a href="#" style="color:white">WOMEN</a></li>
+          <li> <a href="#" style="color:white">BABY & KIDS</a></li>
+          <li> <a href="#" style="color:white">BOOKS & MEDIA</a></li>
+          <li> <a href="#" style="color:white">HOME & kITCHEN</a></li>
+          <li> <a href="#" style="color:white">MORE STORIES</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a style="color:white" href="#/checkout">Checkout({{basket.count()}})</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
+
+    <div class="container" ng-view=""></div>
   <footer role="contentinfo" class="bs-footer"></footer>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
