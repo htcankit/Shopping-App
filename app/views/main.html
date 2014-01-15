@@ -3,7 +3,9 @@
 
 		  <div class="col-sm-6 col-md-3" ng-repeat="item in catalog">
 			    <div class="thumbnail">
-				      <img ng-src="{{item.img}}" style="height: 176px; width: 176px;" class="img-circle">
+			    	<a href="/#/catalogprofile/{{item.id}}">
+				      <img ng-src="{{item.img}}" style="height: 176px; width: 176px;">
+				    </a>
 					<div class="caption">
 						<h4 class="ng-binding" style="display: inline-block">{{item.name}}</h4>
 						<a style="display: inline-block; padding: 2px; 8px;" role="button" class="btn btn-primary" href="#" ng-click="basket.add(item)">Buy</a>

@@ -11,7 +11,7 @@ angular.module('projectsApp', ["ngRoute"])
        templateUrl: 'views/checkout.html',
        controller: 'CheckoutCtrl'
      })
-     .when('/catalogprofile', {
+     .when('/catalogprofile/:catalogId', {
        templateUrl: 'views/catalogprofile.html',
        controller: 'CatalogprofileCtrl'
      })
