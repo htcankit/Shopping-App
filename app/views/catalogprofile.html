@@ -1,7 +1,7 @@
 <ul style="display:inline-block">
-	<li ng-repeat="img in item.img_list">
+	<li ng-repeat="each_img in item.img_list">
 		<a title="" ng-click="setImage($index)">
-	        <img width="48" height="64" title="" ng-src="{{img}}">
+	        <img width="48" height="64" title="" ng-src="{{each_img}}">
 	    </a>
 </li>
 </ul>

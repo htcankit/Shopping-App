@@ -1,18 +1,20 @@
 <div class="bs-example">
 	<div class="row">
-
-		  <div class="col-sm-6 col-md-3" ng-repeat="item in catalog">
+		
+		<div ng-repeat="(subcategory_name, item_list) in catalog | filter:categoryID">
+		  <div class="col-sm-6 col-md-3" ng-repeat="item in item_list" >
 			    <div class="thumbnail">
-			    	<a href="/#/catalogprofile/{{item.id}}">
+			    	<a href="/#/catalogprofile/{{subcategory_name}}/{{item.id}}">
 				      <img ng-src="{{item.img}}" style="height: 176px; width: 176px;">
 				    </a>
 					<div class="caption">
-						<h4 class="ng-binding" style="display: inline-block">{{item.name}}</h4>
+						<h7 class="ng-binding" style="display: inline-block">{{item.name}}</h4>
 						<a style="display: inline-block; padding: 2px; 8px;" role="button" class="btn btn-primary" href="#" ng-click="basket.add(item)">Buy</a>
 						 {{item.price | currency}}
 					</div>			      
 				</div>	
 		  </div>
+		</div>
 
 	</div><!-- End of class row -->
 </div> <!-- End of bs-example -->

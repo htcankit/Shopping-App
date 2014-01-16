@@ -11,7 +11,11 @@ angular.module('projectsApp', ["ngRoute"])
        templateUrl: 'views/checkout.html',
        controller: 'CheckoutCtrl'
      })
-     .when('/catalogprofile/:catalogId', {
+     .when('/catalogprofile/:subCatalogId/:catalogId', {
+       templateUrl: 'views/catalogprofile.html',
+       controller: 'CatalogprofileCtrl'
+     })
+     .when('/subcategory/:subCatalogId', {
        templateUrl: 'views/catalogprofile.html',
        controller: 'CatalogprofileCtrl'
      })
