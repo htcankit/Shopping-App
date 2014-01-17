@@ -1,8 +1,10 @@
+{{temp_var}}
+
 <div class="bs-example">
 	<div class="row">
 		
-		<div ng-repeat="(subcategory_name, item_list) in catalog | filter:categoryID">
-		  <div class="col-sm-6 col-md-3" ng-repeat="item in item_list" >
+		<div ng-repeat="(subcategory_name, item_list) in catalog">
+		  <div class="col-sm-6 col-md-3" ng-repeat="item in item_list | filter:temp_var" >
 			    <div class="thumbnail">
 			    	<a href="/#/catalogprofile/{{subcategory_name}}/{{item.id}}">
 				      <img ng-src="{{item.img}}" style="height: 176px; width: 176px;">

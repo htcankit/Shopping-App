@@ -25,6 +25,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+<div ng-controller="NavCtrl" >
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color:#005387;border-color:#005387">
       <div class="container">
         <div class="navbar-header">
@@ -34,31 +35,31 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#" style="color:white;font-family:bold;font-size:20px" alt="Online Shopping">Shopping Cart</a>
+          <a class="navbar-brand" href="#" style="color:white;font-family:bold;font-size:20px" alt="Online Shopping" ng-click="setTempVar('')">Shopping Cart</a>
         </div>
         <div class="navbar-collapse collapse">
           <form class="navbar-form" role="form">
             <div class="form-group" style="width:50%">
               <!-- <span class="glyphicon glyphicon-search"></span> -->
-              <input type="text" placeholder="Search" class="form-control">
+              <input type="text" placeholder="Search" class="form-control" ng-model="search" ng-change="setTempVar(search)">
             </div>
             <button type="submit" class="btn btn-success">Search</button>
           </form>
-        </div><!--/.navbar-collapse -->
+        </div>
       </div>
-    </div>
+    </div><!--/.navbar-collapse -->
 
   <div class="jumbotron" style="padding-bottom:0px;background-color: #0a3151;border-color:#0a3151;font-size:15px;">
-    <div class="container" ng-controller="NavCtrl">
+    <div class="container">
       <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
         <ul class="nav navbar-nav">
-          <li> <a href="#" style="color:white">ELECTRONICS</a></li>
-          <li> <a href="#" style="color:white">MEN</a></li>
-          <li> <a href="#" style="color:white">WOMEN</a></li>
-          <li> <a href="#" style="color:white">BABY & KIDS</a></li>
-          <li> <a href="#" style="color:white">BOOKS & MEDIA</a></li>
-          <li> <a href="#" style="color:white">HOME & kITCHEN</a></li>
-          <li> <a href="#" style="color:white">MORE STORIES</a></li>
+          <li> <a href="#" style="color:white" ng-click="setTempVar('ELECTRONICS')">ELECTRONICS</a></li>
+          <li> <a href="#" style="color:white" ng-click="setTempVar('MEN')">MEN</a></li>
+          <li> <a href="#" style="color:white" ng-click="setTempVar('WOMEN')">WOMEN</a></li>
+          <li> <a href="#" style="color:white" ng-click="setTempVar('BABY & KIDS')">BABY & KIDS</a></li>
+          <li> <a href="#" style="color:white" ng-click="setTempVar('BOOKS & MEDIA')">BOOKS & MEDIA</a></li>
+          <li> <a href="#" style="color:white" ng-click="setTempVar('HOME & kITCHEN')">HOME & kITCHEN</a></li>
+          <li> <a href="#" style="color:white" ng-click="setTempVar('MORE STORIES')">MORE STORIES</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a style="color:white" href="#/checkout">Checkout({{basket.count()}})</a></li>
@@ -66,8 +67,11 @@
       </nav>
     </div>
   </div>
-
+</div>
     <div class="container" ng-view=""></div>
+
+
+
   <footer role="contentinfo" class="bs-footer"></footer>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>

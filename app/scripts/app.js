@@ -22,4 +22,6 @@ angular.module('projectsApp', ["ngRoute"])
      .otherwise({
        redirectTo: '/'
      });
+ }).run(function($rootScope){
+    $rootScope.temp_var = "";
  });

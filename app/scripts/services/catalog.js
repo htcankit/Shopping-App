@@ -12,14 +12,14 @@ angular.module('projectsApp')
             category: 'MEN'
         },
       ],
-  ELECTORONICS: [
+  ELECTRONICS: [
         {
           id: 0,
           name: 'Batmobile',
           img: 'http://cache.jalopnik.com/assets/images/12/2007/09/batmobile_Tumbler.jpg',
           img_list:['http://cache.jalopnik.com/assets/images/12/2007/09/batmobile_Tumbler.jpg','/images/shirt2.JPG','/images/shirt3.JPG','/images/shirt4.JPG'],
           price: 1000000,
-          category: 'ELECTORONICS'          
+          category: 'ELECTRONICS'          
         },  
         {
           id: 1,
@@ -28,7 +28,7 @@ angular.module('projectsApp')
           img_list:['http://thumbs.ebaystatic.com/d/w225/m/mghYCIUqNPNPDZaxETYNCig.jpg','/images/shirt2.JPG','/images/shirt3.JPG','/images/shirt4.JPG'],
 
           price: 24990,
-          category: 'ELECTORONICS',
+          category: 'ELECTRONICS',
         },        
         {
           id: 2,
@@ -36,41 +36,53 @@ angular.module('projectsApp')
           img: '/images/ipad1.jpeg',
           img_list: ['/images/ipad1.jpeg','/images/ipad2.jpeg','/images/ipad3.jpeg'],
           price: 16390,
-          category: 'ELECTORONICS'
+          category: 'ELECTRONICS'
         },        
       ],
-  OTHERS:[
+  WOMEN:[],
+  'BABY & KIDS':[],
+  'BOOKS & MEDIA':[],
+  'HOME & kITCHEN':[],
+  'MORE STORIES':[
         {
           id: 0,
           name: 'Utility Belt',
           img: 'http://www.felthosfoundry.com/wordpress/wp-content/uploads/utilitybelt.jpg',
           img_list: ['http://www.felthosfoundry.com/wordpress/wp-content/uploads/utilitybelt.jpg','/images/ipad2.jpeg','/images/ipad3.jpeg'],
-
-          price: 120
+          price: 120,
+          category: 'MORE STORIES'
         },
         {
           id: 1,
           name: 'Cape',
           img: 'http://superflykids.com/images/poplet-solid-color-superhero-cape-02_0.jpg',
-          price: 47
+          img_list: ['http://superflykids.com/images/poplet-solid-color-superhero-cape-02_0.jpg','/images/ipad2.jpeg','/images/ipad3.jpeg'],
+          price: 47,
+          category: 'MORE STORIES'
         },
         {
           id: 2,
           name: 'Sony NEX-6',
           img: 'http://i.ebayimg.com/00/s/MjIwWDIyMA==/z/lDIAAOxy63FSq72g/$_1.JPG?set_id=2',
-          price: 47650
+          img_list: ['http://i.ebayimg.com/00/s/MjIwWDIyMA==/z/lDIAAOxy63FSq72g/$_1.JPG?set_id=2','/images/ipad2.jpeg','/images/ipad3.jpeg'],
+          price: 47650,
+          category: 'MORE STORIES'
         },
         {
           id: 3,
           name: 'Watch',
           img: 'http://thumbs.ebaystatic.com/d/w225/m/mWAlJnmVq_0gusuhOaDwuPg.jpg',
-          price: 16929
+          img_list: ['http://thumbs.ebaystatic.com/d/w225/m/mWAlJnmVq_0gusuhOaDwuPg.jpg','/images/ipad2.jpeg','/images/ipad3.jpeg'],
+          price: 16929,
+          category: 'MORE STORIES'
         },
         {
           id: 4,
           name: 'Leather Jacket',
           img: 'http://thumbs.ebaystatic.com/d/w225/m/mm3T5dUhKBZVeAgbDMysJrA.jpg',
-          price: 5750
+          img_list: ['http://thumbs.ebaystatic.com/d/w225/m/mm3T5dUhKBZVeAgbDMysJrA.jpg','/images/ipad2.jpeg','/images/ipad3.jpeg'],
+          price: 5750,
+          category: 'MORE STORIES'
         },
       ]
 });
